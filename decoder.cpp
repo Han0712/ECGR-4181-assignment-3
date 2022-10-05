@@ -3,7 +3,7 @@
 #include <string>
 #include <ctime>
 
-using namespace std;           #test
+using namespace std;
 
 enum class opcode_type {
     Rtype,
