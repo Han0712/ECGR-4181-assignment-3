@@ -29,109 +29,109 @@ string print_opcode_type(opcode_type) {
 
 }
 
-void getOpcode(inst) {
+uint8_t getOpcode(uint inst) {
     uint8_t opcode;
     opcode = (uint8_t)((inst & 0b00000000000000000000000001111111) >> 0);
     return opcode;
 }
 
-void getOpcode(inst) {
+uint8_t  getrd(uint inst) {
     uint8_t rd;
     rd = (uint8_t)((inst & 0b00000000000000000000111110000000) >> 7);
     return rd;
 }
 
-void getOpcode(inst) {
+uint8_t  getfun3(uint inst) {
     uint8_t fun3;
     fun3 = (uint8_t)((inst & 0b00000000000000000111000000000000) >> 12);
-    return rs1;
+    return fun3;
 }
 
-void getOpcode(inst) {
+uint8_t  getrs1(uint inst) {
     uint8_t rs1;
     rs1 = (uint8_t)((inst & 0b00000000000011111000000000000000) >> 15);
     return rs1;
 }
 
-void getOpcode(inst) {
+uint8_t  getrs2(uint inst) {
     uint8_t rs2;
     rs2 = (uint8_t)((inst & 0b00000001111100000000000000000000) >> 20);
-    return opcode;
+    return rs2;
 }
 
-void getOpcode(inst) {
+uint8_t  getfun7(uint inst) {
     uint8_t fun7;
     fun7 = (uint8_t)((inst & 0b11111110000000000000000000000000) >> 25);
     return fun7;
 }
 
-void getOpcode(inst) {
+uint8_t getimm11_0(uint inst) {
     uint8_t imm11_0;
     imm11_0 = (uint8_t)((inst & 0b11111111111100000000000000000000) >> 20);
     return imm11_0;
 }
 
-void getOpcode(inst) {
+uint8_t getimm4_0(uint inst) {
     uint8_t imm4_0;
     imm4_0 = (uint8_t)((inst & 0b00000000000000000000111110000000) >> 7);
     return imm4_0;
 }
 
-void getOpcode(inst) {
+uint8_t getimm11_5(uint inst) {
     uint8_t imm11_5;
     imm11_5 = (uint8_t)((inst & 0b11111110000000000000000000000000) >> 25);
     return imm11_5;
 }
 
-void getOpcode(inst) {
+uint8_t getimm11_B(uint inst) {
     uint8_t imm11_B;
     imm11_B = (uint8_t)((inst & 0b00000000000000000000000010000000) >> 7);
     return imm11_B;
 }
 
-void getOpcode(inst) {
+uint8_t getimm4_1(uint inst) {
     uint8_t imm4_1;
     imm4_1 = (uint8_t)((inst & 0b00000000000000000000111100000000) >> 8);
     return imm4_1;
 }
 
-void getOpcode(inst) {
+uint8_t getimm10_5(uint inst) {
     uint8_t imm10_5;
     imm10_5 = (uint8_t)((inst & 0b00111110000000000000000000000000) >> 25);
     return imm10_5;
 }
 
-void getOpcode(inst) {
+uint8_t getimm12(uint inst) {
     uint8_t imm12;
     imm12 = (uint8_t)((inst & 0b11000000000000000000000000000000) >> 30);
     return imm12;
 }
 
-void getOpcode(inst) {
+uint8_t getimm31_12(uint inst) {
     uint8_t imm31_12;
     imm31_12 = (uint8_t)((inst & 0b11111111111111111111000000000000) >> 12);
     return imm31_12;
 }
 
-void getOpcode(inst) {
+uint8_t getimm19_12(uint inst) {
     uint8_t imm19_12;
     imm19_12 = (uint8_t)((inst & 0b00000000000011111111000000000000) >> 12);
     return imm19_12;
 }
 
-void getOpcode(inst) {
+uint8_t getimm11_J(uint inst) {
     uint8_t imm11_J;
     imm11_J = (uint8_t)((inst & 0b00000000000100000000000000000000) >> 20);
     return imm12;
 }
 
-void getOpcode(inst) {
+uint8_t getimm10_1(uint inst) {
     uint8_t imm10_1;
     imm10_1 = (uint8_t)((inst & 0b01111111111000000000000000000000) >> 21);
     return imm10_1;
 }
 
-void getOpcode(inst) {
+uint8_t getimm20(uint inst) {
     uint8_t imm20;
     imm20 = (uint8_t)((inst & 0b10000000000000000000000000000000) >> 31);
     return imm20;
