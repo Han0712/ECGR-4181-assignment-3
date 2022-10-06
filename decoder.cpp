@@ -155,11 +155,6 @@ void check_type(opcode) {
 
 }
 
-void split(input) {
-    string inputBit = input;
-
-}
-
 void control() {
     int alu_src;
     int mem_to_reg;
