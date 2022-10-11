@@ -541,7 +541,7 @@ void runDecoder(uint32_t inst) {
 
 }
 int main() {
-    //example code
+    //example 32-bit instruction
     uint32_t inst[] = { 0b00000000001100010000001110110011,
         0b01000000101100111000011110110011,
         0b01000000001101101000010100111011,
